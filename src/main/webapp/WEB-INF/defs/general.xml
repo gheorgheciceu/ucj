@@ -25,92 +25,118 @@
 		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
 	</definition>
 	
-	
-	<definition name="mylogin" extends="common">
-		<put-attribute name="title" value="SDMS" />
-		<put-attribute name="body" value="/WEB-INF/jsp/mylogin.jsp" />
-	</definition>
-	
-	
-	<definition name="register-categoryType" extends="navAndFooter">
-		<put-attribute name="title" value="SDMS" />
+	<definition name="register-menu" extends="navAndFooter">
+		<put-attribute name="title" value="UCJ" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/register-categoryType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register-menu.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>	
-	<definition name="edit-categoryType" extends="navAndFooter">
+	<definition name="edit-menu" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
 		<put-attribute name="body" value="/WEB-INF/jsp/edit-categoryType.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="search-categoryType" extends="navAndFooter">
+	<definition name="search-menu" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/search-categoryType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/search-menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="menu" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/menu.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
 	
-	<definition name="register-professor" extends="navAndFooter">
+	<definition name="register-team" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/register-professor.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register-team.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="search-professor" extends="navAndFooter">
-		<put-attribute name="title" value="SDMS" />
-		<put-attribute name="body" value="/WEB-INF/jsp/search-professor.jsp" />
-	</definition>
-	<definition name="professor" extends="navAndFooter">
+	<definition name="search-team" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/professor.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/search-team.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="edit-professor" extends="navAndFooter">
+	<definition name="team" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/edit-professor.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/team.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="edit-team" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/edit-team.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
 	
-	<definition name="register-studentType" extends="navAndFooter">
+	<definition name="register-post" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/register-studentType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register-post.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="studentType" extends="navAndFooter">
+	<definition name="post" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/studentType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/post.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>	
-	<definition name="edit-studentType" extends="navAndFooter">
+	<definition name="edit-post" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/edit-studentType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/edit-post.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="student-timetable" extends="navAndFooter">
+	<definition name="student-post" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/student-timetable.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/student-post.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
-	<definition name="search-studentType" extends="navAndFooter">
+	<definition name="search-post" extends="navAndFooter">
 		<put-attribute name="title" value="SDMS" />
 		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/search-studentType.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/search-post.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="register-player" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register-player.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="player" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/player.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>	
+	<definition name="edit-player" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/edit-player.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="student-player" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/student-player.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="search-player" extends="navAndFooter">
+		<put-attribute name="title" value="SDMS" />
+		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/search-player.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
 	</definition>
 
 
-	<definition name="timetable" extends="navAndFooter">
-		<put-attribute name="title" value="SDMS" />
-		<put-attribute name="navBar" value="/WEB-INF/layout/navBar.jsp" />
-		<put-attribute name="body" value="/WEB-INF/jsp/timetable.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
-	</definition>
 
 </tiles-definitions>

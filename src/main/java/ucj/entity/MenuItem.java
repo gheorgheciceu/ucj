@@ -28,7 +28,7 @@ public class MenuItem {
 	@JoinColumn(name="menu_id")
 	private MenuItem menu;
 	
-	@OneToMany(mappedBy = "submenu")
+	@OneToMany(mappedBy = "menu")
 	private List<MenuItem> submenu = new ArrayList<MenuItem>();
 
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ucj">
+		<class>ucj.entity.Admin</class>
+		<class>ucj.entity.Game</class>
+		<class>ucj.entity.Guest</class>
+		<class>ucj.entity.MenuItem</class>
+		<class>ucj.entity.Player</class>
+		<class>ucj.entity.Post</class>
+		<class>ucj.entity.Practice</class>
+		<class>ucj.entity.Role</class>
+		<class>ucj.entity.Schedule</class>
+		<class>ucj.entity.Team</class>
+		<class>ucj.entity.User</class>
+	</persistence-unit>
+</persistence>

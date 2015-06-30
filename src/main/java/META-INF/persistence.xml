@@ -12,5 +12,9 @@
 		<class>ucj.entity.Schedule</class>
 		<class>ucj.entity.Team</class>
 		<class>ucj.entity.User</class>
+		<class>ucj.entity.Person</class>
+		<class>ucj.entity.StaffMember</class>
+		<class>ucj.entity.Location</class>
+		<class>ucj.entity.Sponsor</class>
 	</persistence-unit>
 </persistence>

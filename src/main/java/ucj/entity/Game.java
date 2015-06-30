@@ -7,12 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
-@DiscriminatorValue("2")
+@Table(name="Game")
 public class Game extends Schedule{
-
-	private static final long serialVersionUID = 9072806448790858206L;
 	
 	@OneToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="guest")

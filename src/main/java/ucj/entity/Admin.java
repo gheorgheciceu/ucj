@@ -28,5 +28,7 @@ public class Admin {
 	@ManyToOne
 	@JoinColumn(name = "role")
 	private Role role;
+	
+	
 
 }

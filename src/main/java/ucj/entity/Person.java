@@ -8,12 +8,19 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
-@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
-public abstract class Person {
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Person {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
 	private int id;
-	
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 }

@@ -15,12 +15,32 @@ public class Game extends Schedule {
 	@JoinColumn(name = "guest")
 	private Guest guest;
 
+	private int homePoints;
+
+	private int guestPoints;
+
 	public Guest getGuest() {
 		return guest;
 	}
 
 	public void setGuest(Guest guest) {
 		this.guest = guest;
+	}
+
+	public int getHomePoints() {
+		return homePoints;
+	}
+
+	public void setHomePoints(int homePoints) {
+		this.homePoints = homePoints;
+	}
+
+	public int getGuestPoints() {
+		return guestPoints;
+	}
+
+	public void setGuestPoints(int guestPoints) {
+		this.guestPoints = guestPoints;
 	}
 
 }

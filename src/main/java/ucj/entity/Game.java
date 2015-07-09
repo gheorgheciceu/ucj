@@ -2,8 +2,8 @@ package ucj.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -11,13 +11,15 @@ import javax.persistence.Table;
 @Table(name = "Game")
 public class Game extends Schedule {
 
-	@OneToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name = "guest")
 	private Guest guest;
 
 	private int homePoints;
 
 	private int guestPoints;
+
+	public boolean derby;
 
 	public Guest getGuest() {
 		return guest;
@@ -41,6 +43,14 @@ public class Game extends Schedule {
 
 	public void setGuestPoints(int guestPoints) {
 		this.guestPoints = guestPoints;
+	}
+
+	public boolean isDerby() {
+		return derby;
+	}
+
+	public void setDerby(boolean derby) {
+		this.derby = derby;
 	}
 
 }

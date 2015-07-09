@@ -1,9 +1,13 @@
 package ucj.entity;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,8 +17,8 @@ public class Guest {
 	@GeneratedValue
 	private int id;
 
-	@OneToOne(fetch = FetchType.LAZY, mappedBy = "guest")
-	private Game game;
+	@OneToMany(mappedBy = "guest", cascade = CascadeType.ALL)
+	private List<Game> games;
 
 	public int getId() {
 		return id;
@@ -24,12 +28,12 @@ public class Guest {
 		this.id = id;
 	}
 
-	public Game getGame() {
-		return game;
+	public List<Game> getGames() {
+		return games;
 	}
 
-	public void setGame(Game game) {
-		this.game = game;
+	public void setGames(List<Game> games) {
+		this.games = games;
 	}
 
 }

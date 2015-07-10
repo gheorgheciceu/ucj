@@ -1,6 +1,5 @@
 package ucj.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -29,7 +28,7 @@ public class MenuItem {
 	private MenuItem menu;
 
 	@OneToMany(mappedBy = "menu")
-	private List<MenuItem> submenu = new ArrayList<MenuItem>();
+	private List<MenuItem> submenu;
 
 	public int getId() {
 		return id;
